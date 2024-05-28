@@ -1,2 +1,1 @@
-#!/bin/bash
-0x03-shell_variables_expansions0
+this is 0x03. Shell, init files, variables and expansion projects

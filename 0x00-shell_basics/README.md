@@ -1,2 +1,1 @@
-#!/bin/bash
-##Write a script that prints the absolute path name of the current working directory.
+this my 0x00-shell,basics project

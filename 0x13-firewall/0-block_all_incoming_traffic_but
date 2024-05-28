@@ -1,0 +1,12 @@
+sudo apt-get update
+sudo apt-get install ufw
+
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw allow ssh     # Allowing SSH on port 22
+sudo ufw allow http    # Allowing HTTP on port 80
+sudo ufw allow https   # Allowing HTTPS on port 443
+
+sudo ufw enable
+
+sudo ufw status

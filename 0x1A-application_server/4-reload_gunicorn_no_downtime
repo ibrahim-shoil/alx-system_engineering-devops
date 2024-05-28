@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Script to reload Gunicorn without downtime
+
+# Define the path to Gunicorn binary
+GUNICORN_BIN="/home/vagrant/AirBnB_clone_v4/bin/gunicorn"
+
+# Check if Gunicorn is running
+if pgrep auxf | grep -v grep | grep "$GUNICORN_BIN" > /dev/null; then
+    echo "Reloading Gunicorn without downtime..."
+    # Send graceful reload signal to Gunicorn master process
+    pkill -HUP -f "$GUNICORN_BIN"
+    sleep 2 # Wait for a moment to allow Gunicorn to reload
+    echo "Gunicorn reloaded successfully."
+else
+    echo "Gunicorn is not running."
+fi

@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../0x01-shell_permissions"
+		},
+		{
+			"path": "../0x02-shell_redirections"
+		},
+		{
+			"path": "../0x03-shell_variables_expansions"
+		},
+		{
+			"path": "../command_line_for_the_win"
+		}
+	]
+}
